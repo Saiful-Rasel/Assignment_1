@@ -1,4 +1,4 @@
-// problem 1
+
 function formatString(input: string, toUpper?: boolean): string {
      if (typeof input === 'string' && toUpper == true) {
         const result = input.toUpperCase()
@@ -12,7 +12,7 @@ function formatString(input: string, toUpper?: boolean): string {
 
 // console.log(formatString('rello'))
 
-// problem 2 
+
 
 type Books = { title: string; rating: number }[]
 const books: Books = [
@@ -31,7 +31,7 @@ function filterByRating(items: Books) : Books {
 
 // console.log(filterByRating(books))
 
-// probelm 3
+
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
    const result = arrays.flat()
@@ -41,7 +41,7 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
 // console.log(concatenateArrays<string>(['sa', '43'], ['1']))
 // console.log(concatenateArrays<number>([2,3,4],[5]))
 
-// problem 4 
+
 
 class Vehicle {
    private make:string;
@@ -70,7 +70,7 @@ const myCar = new Car('toyoto', 2020,'corolla')
 // console.log(myCar.getInfo())
 // console.log(myCar.getModel())
 
-// problem 5 
+
 
 function processValue(value:string | number) : string | number{
     if(typeof value === 'number'){
@@ -82,7 +82,7 @@ function processValue(value:string | number) : string | number{
 // console.log(processValue('saiful'))
 
 
-// problem 6
+
 
 interface Product {
     name:string;
@@ -108,7 +108,6 @@ const products:Product[] = [
 //   console.log(getMostExpensiveProduct(products))
 
 
-// problem 7 
 
 enum Day {
     Monday,
@@ -131,7 +130,7 @@ enum Day {
 //   console.log(getDayType(Day.Friday))
 
 
-// problem 8 
+
 async function squareAsync(n: number): Promise<number> {
    
         if (n < 0) {
